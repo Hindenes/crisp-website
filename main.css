@@ -19,15 +19,76 @@ video#bgvid {
   position: absolute;
   width: 60%;
   left: 20%;
-  top: 20%;
+  top: 10%;
+  height: 80%;
+}
+
+.netto {
+  padding: 0;
+  margin: 0;
+}
+
+.main-header {
+  margin-bottom: 3rem;
+}
+
+.hide {
+  display: none;
+}
+
+.sub-header {
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.block-s {
+  margin-bottom: 1rem;
+}
+
+.content-container {
+  padding: 4rem 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  text-align: center;
+}
+
+.list-horizontal li {
+  display: inline-block;
+}
+
+.nav-list-elem {
+  padding: 0 2rem;
+}
+.nav-list-elem:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+.nav-elem {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: .8rem;
+}
+.nav-elem:focus {
+  outline: none;
+}
+
+.nav-elem-selected .nav-elem-text {
+  padding-bottom: 0.5rem;
+  border-bottom: 1.5px solid white;
 }
 
 .text {
   color: white;
-  letter-spacing: .2rem;
 }
 
 .text-header {
   text-align: center;
   font-size: 3rem;
+  letter-spacing: .2rem;
 }

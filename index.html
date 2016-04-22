@@ -2,13 +2,34 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="main.css" />
+  <script type="text/javascript" src="index.js"></script>
 </head>
-<body>
+<body class="text">
   <video autoplay loop id="bgvid">
       <source src="video.mp4" type="video/mp4">
   </video>
   <div class="main-container">
-    <h1 class="text text-header">CRISP</h1>
+    <h1 class="text-header netto main-header">THIS IS CRISP!</h1>
+    <nav>
+      <ul class="nav-list netto list-horizontal">
+        <li class="nav-list-elem">
+          <button class="nav-elem text nav-elem-selected" onclick="navigateTo('about')" id="about-btn"><span class="nav-elem-text">ABOUT</span></button>
+        </li>
+        <li class="nav-list-elem">
+          <button class="nav-elem text" onclick="navigateTo('portfolio')" id="portfolio-btn"><span class="nav-elem-text">PORTFOLIO</span></button>
+        </li>
+      </ul>
+    </nav>
+    <section id="about" class="content-container">
+      <p class="netto sub-header">We help great people tell amazing stories</p>
+      <p class="netto block-s">We do drone video/photography, photography, editing, and web design...</p>
+      <p class="netto block-s">We operate from Bergen, Norway. Contact us <em>today</em> to see what we can do for <em>you</em></p>
+      <p class="netto">thisiscrisp@gmail.com</p>
+    </section>
+    <section id="portfolio" class="content-container hide">
+      <p class="netto sub-header"></p>
+      <p class="netto sub-header">Be patient... The portfolio will arrive here soon...</p>
+    </section>
   </div>
 </body>
 </html>
