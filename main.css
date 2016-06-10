@@ -18,10 +18,6 @@ body {
   background-size: cover;
 }
 
-.video-thumbnail {
-    background: url(polina.jpg) no-repeat;
-}
-
 .filter {
   background-color: rgba(0, 0, 0, 0.5);
 }
