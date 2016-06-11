@@ -24,15 +24,6 @@ body {
   height: 100%;
 }
 
-@media handheld {
-  .video {
-      display: none;
-  }
-  .handheld-photo {
-    display: block;
-  }
-}
-
 .filter {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -40,12 +31,6 @@ body {
 .main-container {
   width: 60%;
   margin: 10% auto;
-}
-
-@media (max-width: 800px) {
-  .main-container {
-    width: 100%;
-  }
 }
 
 .netto {
@@ -116,4 +101,17 @@ body {
   text-align: center;
   font-size: 3rem;
   letter-spacing: .2rem;
+}
+
+@media (max-width: 1024px) {
+  .video {
+      display: none;
+  }
+  .handheld-photo {
+    display: block;
+  }
+  .main-container {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
