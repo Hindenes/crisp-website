@@ -18,16 +18,34 @@ body {
   background-size: cover;
 }
 
+.handheld-photo {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+@media handheld {
+  .video {
+      display: none;
+  }
+  .handheld-photo {
+    display: block;
+  }
+}
+
 .filter {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-container {
-  position: absolute;
   width: 60%;
-  left: 20%;
-  top: 10%;
-  height: 80%;
+  margin: 10% auto;
+}
+
+@media (max-width: 800px) {
+  .main-container {
+    width: 100%;
+  }
 }
 
 .netto {
